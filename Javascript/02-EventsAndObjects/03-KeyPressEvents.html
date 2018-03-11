@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Key Press Events</h1>
+
+    <!-- KeyPress
+    KeyDown
+    KeyUp -->
+    <input type="text" placeholder="OnKey Press" onkeypress="disp(this)">
+    <input type="text" placeholder="OnKey Down" onkeydown="disp(this)">
+    <input type="text" placeholder="OnKey Up" onkeyup="disp(this)">
+    <span id="res"></span>
+    
+
+    <script>
+        function disp(obj){
+            // alert("Key Pressed...");
+            document.getElementById("res").innerHTML = obj.value;
+        }
+    </script>
+</body>
+</html>
